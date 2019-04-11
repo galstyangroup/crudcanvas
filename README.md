@@ -44,4 +44,4 @@ const SampleCrud = new CrudCanvas( 'JSONurl' ,  $[model] , $[template]    )
 
 # License
 
-MIT © Harut Galstian
+GNU GENERAL PUBLIC LICENSE © Harut Galstian
