@@ -7,7 +7,7 @@ class CrudCanvas {
     this.authorisedActions = authorisedActions;
     this.itemTemplate = itemTemplate;
     this.crudModel = crudModel;
-    this._data = "";
+    this.g_data = "";
     this.appendElement = appendElement;
   
   }
@@ -33,7 +33,7 @@ class CrudCanvas {
           //const ClosedMilestones = CrudCanvas.HG_data.filter(x => x.ActualEndDate !== null);
       
       document.getElementById(this.appendElement).innerHTML += `
-      <br><br><h3>${getText["open-milestones"]}</h3><br>
+      <br><br><h3>Items</h3><br>
       ${data.map(this.itemTemplate).join("")}
       `;
   }
