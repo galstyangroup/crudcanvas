@@ -1,6 +1,6 @@
-import CrudCanvas from '../../lib/index';
-import textTemplate from '../../lib/editTemplates/text';
-import numberTemplate from '../../lib/editTemplates/number';
+import CrudCanvas from '../../lib-dev/index';
+import textTemplate from '../../lib-dev/editTemplates/text';
+import numberTemplate from '../../lib-dev/editTemplates/number';
 
 export default function () {
   // Templates
