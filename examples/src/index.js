@@ -1,19 +1,34 @@
+import 'bootstrap';
+import './scss/app.scss';
+import Navigo from 'navigo';
 import nav from './components/navigation/nav';
-import productCrud from './components/products';
+import leftNav from './components/navigation/left-navbar';
+import products from './components/products';
+import _home from './components/home';
+import users from './components/users';
 
-document.getElementById('main').innerHTML += nav();
 
-document.getElementById('main').innerHTML += '<div class="container" id="crudcanvas"></div>';
+document.getElementById('nav').innerHTML += nav();
+document.getElementById('leftNav').innerHTML += leftNav();
 
-productCrud.getData();
 
-const saveForm = (x) => {
-  let name = x[0].value;
-  let price = x[1].value;
-  productCrud.createItem({
-    name: name,
-    price: price
-  });
-};
-window.productCrud = productCrud;
-window.saveForm = saveForm;
+const root = null;
+const useHash = true; // Defaults to: false
+const hash = '#!'; // Defaults to: '#'
+const router = new Navigo(root, useHash, hash);
+
+router
+  .on({
+    'products': function () {
+      products();
+    },
+    'users': function () {
+      users();
+    },
+    '*': function () {
+      _home();
+    }
+  })
+  .resolve();
+
+window.router = router;

@@ -4,6 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
+    "build": "webpack",
     "start:dev": "webpack-dev-server"
   },
   "author": "",
@@ -11,20 +12,38 @@
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
+    "autoprefixer": "^9.5.1",
+    "css-loader": "^2.1.1",
+    "exports-loader": "^0.7.0",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.3.1"
   },
   "eslintConfig": {
     "globals": {
-      "window": true
+      "window": true,
+      "document": true
     }
   },
   "dependencies": {
-    "node-fetch": "^2.3.0"
+    "bootstrap": "^4.3.1",
+    "chart.js": "^2.8.0",
+    "form-data": "^2.3.3",
+    "jquery": "^3.4.0",
+    "navigo": "^7.1.2",
+    "node-fetch": "^2.3.0",
+    "popper.js": "^1.15.0",
+    "vanilla-router": "^1.2.7"
+  },
+  "externals": {
+    "moment": "moment"
   }
 }

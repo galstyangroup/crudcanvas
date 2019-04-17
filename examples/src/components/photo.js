@@ -25,6 +25,6 @@ const photoOptions = {
 
 const photoCrud = new CrudCanvas(photoOptions);
 
-photoCrud.getData();
-photoCrud.createItem();
-photoCrud.createItem();
+window.photoCrud.getData();
+window.photoCrud.createItem();
+window.photoCrud.createItem();

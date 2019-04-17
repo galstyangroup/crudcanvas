@@ -1,0 +1,56 @@
+@import "~bootstrap/scss/bootstrap";
+
+#content {
+    display: flex;
+}
+
+#main {
+   margin-left:15vw;
+   display: inline-flex;
+   width: 100vw;
+   margin-top:50px;
+}
+
+#nav {
+    position: fixed;
+    top:0;
+    width: 85vw;
+    margin-left:15vw;
+}
+
+#leftNav {
+    height:100vh;
+    width:15vw;
+    background:#444;
+    position: fixed;
+    left:0;
+}
+
+#leftNav ul {
+    padding-left:0px;
+    display: block;
+
+}
+
+#leftNav ul p {
+    padding: 10px;
+    color:#fefefe;
+}
+
+#leftNav ul li {
+    list-style: none;
+    display: flex;
+    
+}
+
+#leftNav ul li a {
+    width: 100%;
+    color:#f3f3f3;
+    padding: 10px 20px;
+    background: #555555;
+}
+
+#leftNav ul li a:hover {
+    background: #2e2e2e; 
+    text-decoration: none;
+}
