@@ -59,7 +59,8 @@
     "rimraf": "^2.6.2"
   },
   "dependencies": {
-    "node-fetch": "^2.3.0"
+    "node-fetch": "^2.3.0",
+    "rethinkdb": "^2.3.3"
   },
   "directories": {
     "example": "examples",
